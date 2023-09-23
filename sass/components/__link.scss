@@ -1,0 +1,20 @@
+.link {
+  padding: 18px 34px;
+  border-radius: 8px;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--bg-light {
+    background-color: $general-light;
+  }
+
+  &--blue-text {
+    color: $general-blue;
+  }
+
+  &--margin-left {
+    margin-left: 50px;
+  }
+}

@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: $primary-font-style;
-  font-size: 18px;
+  font-family: $main-font-family;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.2;
-  color: $dark-color;
+  line-height: 1.5;
+  color: $general-dark;
 }
 
 a {
@@ -42,4 +42,9 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
 }

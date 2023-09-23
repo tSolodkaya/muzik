@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muzik.</title>
+    <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -19,5 +20,63 @@
     />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="header-hero-wrap container">
+      <header class="header">
+        <div>
+          <a href="/" aria-label="site logo">
+            <svg width="125" height="30">
+              <use href="./images/icons/icons.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                >Speakers
+                <svg class="menu__icon" width="8" height="8">
+                  <use href="./images/icons/icons.svg#arrow-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Yui Ronald</a></li>
+                <li><a href="#">Bob John</a></li>
+                <li><a href="#">Emma Satoshi</a></li>
+                <li><a href="#">Sasha Jackson</a></li>
+                <li><a href="#">Diana Brock</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                >Schedule
+                <svg class="menu__icon" width="8" height="8">
+                  <use href="./images/icons/icons.svg#arrow-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Day 01</a></li>
+                <li><a href="#">Day 02</a></li>
+                <li><a href="#">Day 03</a></li>
+                <li><a href="#">Day 04</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact Us</a>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="link link--uppercase link--bg-light link--blue-text link--margin-left"
+            >GET TICKETS</a
+          >
+        </nav>
+      </header>
+
+      <section class="hero container"></section>
+    </div>
+    <main></main>
+  </body>
 </html>
