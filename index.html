@@ -75,8 +75,187 @@
         </nav>
       </header>
 
-      <section class="hero container"></section>
+      <section class="hero container">
+        <div class="hero-meta-wrap">
+          <h1 class="hero__title">
+            The Best experience of
+            <span class="hero__text-accent">music</span> in 2023
+          </h1>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse
+            eget tellus lectus.
+          </p>
+          <div class="get-started-wrap">
+            <a class="link link--red" href="#">Get Started</a>
+            <a class="hero__whatch-video-link" href="#">
+              <svg width="56" height="56">
+                <use href="./images/icons/icons.svg#play-hero"></use>
+              </svg>
+              Watch Video
+            </a>
+          </div>
+        </div>
+        <div class="timer">
+          <svg width="1447" height="176">
+            <use href="./images/icons/icons.svg#date-time"></use>
+          </svg>
+        </div>
+      </section>
     </div>
-    <main></main>
+    <main>
+      <section class="container container--padding">
+        <h2 class="section__title">
+          <span class="section__text-decor">Explore</span> By Category
+        </h2>
+        <ul class="category-menu">
+          <li class="category__item category__item--bg-light-brown">
+            <a href="#">
+              <svg
+                class="category__icon category__icon--brown"
+                width="40"
+                height="40"
+              >
+                <use href="./images/icons/icons.svg#mixer"></use>
+              </svg>
+              <h3 class="category__name">Pop</h3>
+              <p class="category__description">
+                Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+                vitae
+              </p>
+            </a>
+          </li>
+          <li class="category__item category__item--bg-red">
+            <a href="#">
+              <svg
+                class="category__icon category__icon--red"
+                width="40"
+                height="40"
+              >
+                <use href="./images/icons/icons.svg#bagpipes"></use>
+              </svg>
+              <h3 class="category__name">Folk</h3>
+              <p class="category__description">
+                Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+                vitae
+              </p>
+            </a>
+          </li>
+          <li class="category__item category__item--bg-blue">
+            <a href="#">
+              <svg
+                class="category__icon category__icon--blue"
+                width="40"
+                height="40"
+              >
+                <use href="./images/icons/icons.svg#saxophone"></use>
+              </svg>
+              <h3 class="category__name">Instrumental</h3>
+              <p class="category__description">
+                Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+                vitae
+              </p>
+            </a>
+          </li>
+          <!-- <li class="category__item category__item--bg-purple">
+            <a href="#">
+              <svg
+                class="category__icon category__icon--purple"
+                width="40"
+                height="40"
+              >
+                <use href="./images/icons/icons.svg#guitar"></use>
+              </svg>
+              <h3 class="category__name">Rock</h3>
+              <p class="category__description">
+                Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+                vitae
+              </p>
+            </a>
+          </li>
+          <li class="category__item category__item--bg-light-blue">
+            <a href="#">
+              <svg
+                class="category__icon category__icon--light-blue"
+                width="40"
+                height="40"
+              >
+                <use href="./images/icons/icons.svg#trumpet"></use>
+              </svg>
+              <h3 class="category__name">Jazz</h3>
+              <p class="category__description">
+                Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+                vitae
+              </p>
+            </a>
+          </li> -->
+        </ul>
+      </section>
+      <section class="about-muzik container container--padding">
+        <div class="about-muzik__images">
+          <div class="about-muzik__img-thumb about-muzik__img-thumb--opacity">
+            <picture>
+              <source
+                srcset="./images/about/Img.jpg 1x, ./images/about/Img@2x.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                srcset="
+                  ./images/about/Img.webp    1x,
+                  ./images/about/Img@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="about-muzik__img about-muzik__img--opacity"
+                src="./images/about/Img.jpg"
+                alt="person is doing wideo on the consert"
+              />
+            </picture>
+          </div>
+          <div class="about-muzik__img-thumb about-muzik__img-thumb--position">
+            <picture>
+              <source
+                srcset="./images/about/Img.jpg 1x, ./images/about/Img@2x.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                srcset="
+                  ./images/about/Img.webp    1x,
+                  ./images/about/Img@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./images/about/Img.jpg"
+                alt="person is doing wideo on the consert"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="about-muzik__meta-wrap">
+          <h2 class="section__title section__title--about-margin">
+            About Musik
+          </h2>
+          <p class="section__description section__description--about-margin">
+            Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
+            Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
+            augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
+            non neque suscipit luctus. Mauris et erat id ipsum condimentum
+            cursus. Sed tempus enim non massa mattis iaculis. In quis massa
+            risus
+          </p>
+          <a class="link link--bg-blue link--light-text" href="#"
+            >Learn More
+            <svg class="arrow-right-icon" width="24" height="24">
+              <use href="./images/icons/icons.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section></section>
+    </main>
   </body>
 </html>

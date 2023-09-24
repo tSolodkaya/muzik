@@ -1,6 +1,7 @@
 .link {
   padding: 18px 34px;
   border-radius: 8px;
+  display: inline-block;
 
   &--uppercase {
     text-transform: uppercase;
@@ -14,7 +15,24 @@
     color: $general-blue;
   }
 
+  &--light-text {
+    color: $general-light;
+  }
+
   &--margin-left {
     margin-left: 50px;
   }
+
+  &--red {
+    background-color: $general-red;
+  }
+
+  &--bg-blue {
+    background-color: $general-blue;
+  }
+}
+
+.arrow-right-icon {
+  margin-left: 12px;
+  vertical-align: middle;
 }

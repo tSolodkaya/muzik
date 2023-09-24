@@ -1,0 +1,24 @@
+.section__title {
+  &--explore-margin {
+    margin-bottom: 60px;
+  }
+
+  &--about-margin {
+    margin-bottom: 32px;
+  }
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.section__text-decor {
+  color: $general-blue;
+}
+
+.section__description {
+  &--about-margin {
+    margin-bottom: 80px;
+  }
+
+  font-family: $second-font-family;
+}

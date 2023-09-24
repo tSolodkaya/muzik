@@ -1,7 +1,8 @@
 .hero {
   max-width: 1920px;
-  margin: 0 auto;
+
   height: 964px;
+  padding-top: 120px;
 
   background-color: $general-blue;
   background-image: url("../../images/hero/Img-hero.jpg");
@@ -11,4 +12,51 @@
     (min-resolution: 2dppx) {
     background-image: url("../../images/hero/Img-hero@2x.jpg");
   }
+}
+
+.timer {
+  text-align: center;
+}
+
+.hero-meta-wrap {
+  padding: 105px 475px 125px 475px;
+  text-align: center;
+  color: $general-light;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+
+  color: $general-light;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.22;
+  text-transform: capitalize;
+}
+
+.hero__text-accent {
+  color: $general-light-red;
+}
+
+.hero__description {
+  margin-bottom: 40px;
+
+  font-family: $second-font-family;
+  font-size: 24px;
+  line-height: 1.58;
+}
+
+.get-started-wrap {
+  @extend %flex-centred;
+  gap: 40px;
+}
+
+.hero__whatch-video-link {
+  @extend %flex-centred;
+  gap: 20px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.4;
 }

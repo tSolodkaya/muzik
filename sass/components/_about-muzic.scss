@@ -1,0 +1,32 @@
+.about-muzik {
+  @extend %flex-space-between;
+  flex-shrink: 0;
+}
+
+.about-muzik__img-thumb {
+  width: 460px;
+  border-radius: 24px;
+  overflow: hidden;
+
+  // margin-right: 70px;
+
+  &--opacity {
+    opacity: 0.3;
+  }
+
+  &--position {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+  }
+}
+
+.about-muzik__images {
+  position: relative;
+  min-width: 530px;
+  height: 550px;
+}
+
+.about-muzik__meta-wrap {
+  padding-left: 70px;
+}

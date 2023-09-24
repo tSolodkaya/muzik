@@ -10,7 +10,7 @@ body {
 a {
   text-decoration: none;
   color: currentColor;
-  display: block;
+  //  display: block;
 }
 
 ul {
@@ -47,4 +47,10 @@ button {
 .container {
   width: 1920px;
   margin: 0 auto;
+
+  padding-bottom: 120px;
+
+  &--padding {
+    padding: 120px 375px;
+  }
 }
