@@ -1,0 +1,77 @@
+.singers {
+  @extend %flex-space-between;
+  margin-bottom: 240px;
+}
+
+.singers-photos {
+  @extend %flex-space-between;
+
+  flex-basis: 670px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.singers__meta-wrap {
+  flex-basis: 470px;
+  margin-right: 30px;
+}
+
+.singers-photos__item {
+  position: relative;
+
+  &--horizontal {
+    width: 370px;
+    height: 270px;
+  }
+
+  &--vertical {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.singers-photos__blur {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+
+  border-radius: 20px;
+  opacity: 0.5;
+  filter: blur(40px);
+
+  &--img-1 {
+    background-image: url("../../images/singers/Img-singer-1.jpg");
+  }
+
+  &--img-2 {
+    background-image: url("../../images/singers/Img-singer2.jpg");
+  }
+
+  &--img-3 {
+    background-image: url("../../images/singers/Img-singer-3.jpg");
+  }
+
+  &--img-4 {
+    background-image: URL("../../images/singers/Img-singer4.jpg");
+  }
+}
+
+.singers-photos__thumb {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  z-index: 3;
+
+  &--img-2 {
+    top: 0;
+  }
+
+  &--img-4 {
+    top: 30px;
+  }
+  border-radius: 24px;
+  overflow: hidden;
+}
