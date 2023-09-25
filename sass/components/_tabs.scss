@@ -1,0 +1,47 @@
+.tabs {
+  @extend %flex-space-between;
+  margin-bottom: 40px;
+}
+
+.tabs__item {
+  flex-basis: 370px;
+}
+
+.tabs__day {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.58;
+  opacity: 0.5;
+
+  .tabs__link--active & {
+    color: $general-blue;
+    opacity: 1;
+  }
+}
+
+.tabs__date {
+  font-weight: 700;
+  opacity: 0.2;
+
+  .tabs__link--active & {
+    color: $general-blue;
+    opacity: 0.5;
+  }
+}
+
+.tabs__link {
+  &::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: $general-dark;
+    opacity: 0.1;
+
+    margin-top: 20px;
+  }
+
+  &--active::after {
+    background-color: $general-blue;
+    opacity: 1;
+  }
+}

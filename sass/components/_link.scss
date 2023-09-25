@@ -3,36 +3,65 @@
   border-radius: 8px;
   display: inline-block;
 
+  transition: color 250ms $transition-function,
+    background-color 250ms $transition-function,
+    border 250ms $transition-function;
+
   &--uppercase {
     text-transform: uppercase;
   }
 
   &--bg-light {
     background-color: $general-light;
-  }
-
-  &--blue-text {
     color: $general-blue;
-  }
+    border: 1px solid $general-blue;
 
-  &--light-text {
-    color: $general-light;
-  }
-
-  &--margin-left {
-    margin-left: 50px;
-  }
-
-  &--red {
-    background-color: $general-red;
+    &:hover,
+    &:focus {
+      background-color: $general-blue;
+      color: $general-light;
+      //  border: 1px solid $general-light;
+    }
   }
 
   &--bg-blue {
     background-color: $general-blue;
+    color: $general-light;
+    border: 1px solid $general-blue;
+
+    &:hover,
+    &:focus {
+      background-color: $general-light;
+      color: $general-blue;
+    }
+  }
+
+  &--bg-red {
+    background-color: $general-red;
+    color: $general-light;
+    border: 1px solid $general-red;
+
+    &:hover,
+    &:focus {
+      background-color: $general-light;
+      color: $general-red;
+    }
+  }
+
+  &--margin-left {
+    margin-left: 50px;
   }
 }
 
 .arrow-right-icon {
   margin-left: 12px;
   vertical-align: middle;
+  fill: $general-light;
+
+  transition: fill 250ms $transition-function;
+
+  .link:hover &,
+  .link:focus & {
+    fill: $general-blue;
+  }
 }

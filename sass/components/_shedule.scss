@@ -1,0 +1,94 @@
+.shedule {
+  background: $section-bg;
+}
+
+.table-wrap {
+  border: 1px solid $additional-grey;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table__head {
+  background-color: $bg-table-head;
+}
+
+.table__head-column {
+  font-family: $second-font-family;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.58;
+  text-align: start;
+}
+
+.table__row {
+  &:not(:last-child) {
+    border-bottom: 2px solid $additional-grey;
+  }
+}
+
+.column-1 {
+  width: 300px;
+  padding: 40px 30px 40px 40px;
+}
+
+.column-2 {
+  width: 400px;
+  padding: 40px 0;
+}
+
+.column-3 {
+  width: 470px;
+  padding: 40px 40px 40px 30px;
+
+  &--content {
+    @extend %flex-space-between;
+  }
+}
+
+.speakers-list__item {
+  @extend %flex-start;
+  gap: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.speakers-list__desc {
+  margin-left: 10px;
+}
+
+.speakers-list__video {
+  @extend %flex-centred;
+  gap: 8px;
+
+  font-weight: 700;
+
+  &--red {
+    color: $general-red;
+  }
+}
+
+.table__time {
+  font-family: $second-font-family;
+}
+
+.table__content {
+  font-family: $second-font-family;
+  font-weight: 700;
+}
+
+.speakers-list__name,
+.speakers-list__both-decor {
+  font-family: $second-font-family;
+  font-weight: 700;
+}
+
+.speakers-list__both {
+  font-family: $second-font-family;
+  opacity: 0.5;
+}
