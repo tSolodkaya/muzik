@@ -88,6 +88,19 @@ button {
           align-items: center;
 }
 
+.sponsors-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header-hero-wrap {
   position: relative;
 }
@@ -385,12 +398,10 @@ button {
 }
 
 .section__title {
+  margin-bottom: 60px;
   font-size: 34px;
   font-weight: 700;
   line-height: 1.3;
-}
-.section__title--explore-margin, .section__title--shedule-margin, .section__title--tier-margin {
-  margin-bottom: 60px;
 }
 .section__title--about-margin {
   margin-bottom: 32px;
@@ -673,4 +684,16 @@ button {
 
 .tiers-list__inclusive {
   margin-bottom: 30px;
+}
+
+.sponsors {
+  text-align: center;
+}
+
+.sponsors-list {
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+  row-gap: 60px;
+  margin-bottom: 80px;
 }/*# sourceMappingURL=main.css.map */

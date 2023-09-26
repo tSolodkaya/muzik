@@ -1,0 +1,11 @@
+.sponsors {
+  text-align: center;
+}
+
+.sponsors-list {
+  @extend %flex-around;
+  column-gap: 100px;
+  row-gap: 60px;
+
+  margin-bottom: 80px;
+}
