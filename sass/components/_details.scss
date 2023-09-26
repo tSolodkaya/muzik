@@ -1,0 +1,66 @@
+.details {
+  padding: 103px 0 103px 130px;
+
+  width: 1075px;
+  background: url("../../images/contacts/shape-2.png"), $bg-dark;
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 56px;
+}
+
+.details__title {
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.58;
+}
+
+.details__form {
+  width: 570px;
+}
+
+.details__input,
+.details__textarea {
+  padding-bottom: 8px;
+  padding-top: 18px;
+  margin-bottom: 40px;
+
+  width: 100%;
+  border-bottom: 1px solid $additional-grey;
+
+  font-family: $second-font-family;
+
+  transition: border-color 250ms $transition-function;
+
+  &:focus {
+    outline: none;
+    border-color: $general-blue;
+  }
+}
+
+.details__textarea {
+  min-height: 96px;
+  resize: none;
+}
+
+.details-wrap {
+  position: relative;
+}
+
+.details__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-family: $second-font-family;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.7;
+
+  transition: color 250ms $transition-function;
+}
+
+.details__input:focus-within + .details__label,
+.details__textarea:focus-within + .details__label {
+  color: $general-blue;
+}

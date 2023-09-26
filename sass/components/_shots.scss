@@ -1,8 +1,15 @@
-.shots-bg-wrap {
+.shots {
   padding-top: 160px;
   background: url("../../images/shorts/Instagram.png"), $shots-bg;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../images/shorts/Instagram@2x.png");
+  }
+
   background-repeat: no-repeat, repeat;
-  background-position: top 0 left 123px, top 0 right 0;
+  background-position: top 0 left 498px, top 0 right 0;
 }
 
 .shots-list {

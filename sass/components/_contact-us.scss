@@ -1,0 +1,45 @@
+.contacts-details {
+  display: flex;
+  padding: 0;
+}
+
+.contact-us {
+  padding-top: 120px;
+  padding-left: 80px;
+
+  width: 845px;
+
+  color: $general-light;
+  background: url("../../images/contacts/shape-1.png"), $general-blue;
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+}
+
+.contact-us__question {
+  margin-bottom: 80px;
+  font-family: $second-font-family;
+  font-size: 24px;
+  line-height: 1.58;
+  opacity: 0.7;
+}
+
+.contact-us__icon {
+  margin-right: 8px;
+}
+
+.contact-us__link {
+  font-weight: 700;
+  line-height: 1.22;
+  vertical-align: middle;
+
+ 
+}
+
+.contact-us__link-wrap {
+  @extend %flex-start;
+  margin-bottom: 40px;
+}
+
+.contact-us__adress {
+  @extend %flex-start;
+}

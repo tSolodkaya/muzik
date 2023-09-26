@@ -1,0 +1,15 @@
+.socials {
+  @extend %flex-centred;
+  gap: 30px;
+}
+
+.socials__icon {
+  fill: $general-light;
+
+  transition: fill 250ms $transition-function;
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: $general-blue;
+  }
+}
