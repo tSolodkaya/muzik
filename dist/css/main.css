@@ -64,7 +64,7 @@ button {
           align-items: center;
 }
 
-.tiers-list, .tabs, .column-3--content, .singers-photos, .singers, .about-muzik, .header {
+.shots-list, .tiers-list, .tabs, .column-3--content, .singers-photos, .singers, .about-muzik, .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +76,7 @@ button {
           align-items: center;
 }
 
-.speakers-list__item {
+.likes-comments-list__item, .likes-comments-list, .speakers-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,4 +696,106 @@ button {
           column-gap: 100px;
   row-gap: 60px;
   margin-bottom: 80px;
+}
+
+.testimonials-list {
+  margin-bottom: 130px;
+}
+
+.testimonials-list__item {
+  position: relative;
+  margin: 0 auto;
+  width: 770px;
+}
+
+.quote-text-thumb {
+  position: relative;
+  background-color: rgba(34, 34, 34, 0.03);
+}
+
+.testimonials-list__text {
+  padding: 50px 60px 120px 60px;
+  opacity: 0.7;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.quote-left-icon {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.quote-rigth-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+}
+
+.avatar-img-thumb {
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar {
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 127px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.avatar__name {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.avatar__mail {
+  color: #381ddb;
+  font-family: "Raleway", sans-serif;
+}
+
+.shots-bg-wrap {
+  padding-top: 160px;
+  background: url("../../images/shorts/Instagram.png"), -webkit-gradient(linear, left top, left bottom, from(rgba(252, 82, 82, 0.05)), to(rgba(252, 82, 82, 0)));
+  background: url("../../images/shorts/Instagram.png"), linear-gradient(180deg, rgba(252, 82, 82, 0.05) 0%, rgba(252, 82, 82, 0) 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: top 0 left 123px, top 0 right 0;
+}
+
+.shots-list__item {
+  width: 370px;
+}
+
+.shots-list__img-thumb {
+  margin-bottom: 24px;
+}
+
+.likes-comments-list {
+  gap: 40px;
+  margin-bottom: 8px;
+}
+
+.likes-comments-list__item {
+  gap: 8px;
+  font-weight: 700;
+}
+
+.shots-list__title {
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.shots-list__tags {
+  font-family: "Raleway", sans-serif;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

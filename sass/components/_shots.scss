@@ -1,0 +1,43 @@
+.shots-bg-wrap {
+  padding-top: 160px;
+  background: url("../../images/shorts/Instagram.png"), $shots-bg;
+  background-repeat: no-repeat, repeat;
+  background-position: top 0 left 123px, top 0 right 0;
+}
+
+.shots-list {
+  @extend %flex-space-between;
+}
+
+.shots-list__item {
+  width: 370px;
+}
+
+.shots-list__img-thumb {
+  margin-bottom: 24px;
+}
+
+.likes-comments-list {
+  @extend %flex-start;
+  gap: 40px;
+  margin-bottom: 8px;
+}
+
+.likes-comments-list__item {
+  @extend %flex-start;
+  gap: 8px;
+
+  font-weight: 700;
+}
+
+.shots-list__title {
+  margin-bottom: 8px;
+
+  font-family: $second-font-family;
+  font-weight: 400;
+}
+
+.shots-list__tags {
+  font-family: $second-font-family;
+  opacity: 0.5;
+}
