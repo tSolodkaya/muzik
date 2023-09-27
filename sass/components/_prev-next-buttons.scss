@@ -1,0 +1,24 @@
+.prev-next-buttons {
+  @extend %flex-centred;
+  gap: 50px;
+
+  margin-top: 50px;
+}
+
+.prev-btn,
+.next-btn {
+  width: 56px;
+  height: 56px;
+  border: 1px solid $additional-grey;
+  border-radius: 50%;
+
+  transition: border-color 250ms $transition-function;
+
+  &:hover {
+    border-color: $general-blue;
+  }
+
+  &:active {
+    border-color: $additional-grey;
+  }
+}

@@ -13,11 +13,14 @@
 }
 
 .shots-list {
-  @extend %flex-space-between;
 }
 
 .shots-list__item {
-  width: 370px;
+  max-width: 370px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .shots-list__img-thumb {

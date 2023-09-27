@@ -19,6 +19,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <div class="header-hero-wrap container">
@@ -68,7 +73,7 @@
           </ul>
           <a
             href="#"
-            class="link link--uppercase link--bg-light link--margin-left"
+            class="link link--uppercase link--bg-light link--border-light link--margin-left"
             >GET TICKETS</a
           >
         </nav>
@@ -103,10 +108,11 @@
       </section>
     </div>
     <main>
-      <section class="container container--padding">
-        <h2 class="section__title">
+      <section class="container explore">
+        <h2 class="section__title section__title--padding">
           <span class="section__text-decor">Explore</span> By Category
         </h2>
+
         <ul class="category-menu">
           <li class="category__item category__item--bg-light-brown">
             <a href="#">
@@ -156,7 +162,7 @@
               </p>
             </a>
           </li>
-          <!-- <li class="category__item category__item--bg-purple">
+          <li class="category__item category__item--bg-purple">
             <a href="#">
               <svg
                 class="category__icon category__icon--purple"
@@ -187,8 +193,20 @@
                 vitae
               </p>
             </a>
-          </li> -->
+          </li>
         </ul>
+        <div class="prev-next-buttons">
+          <button class="prev-btn" type="button" data-prev-explore>
+            <svg width="34" height="34">
+              <use href="./images/icons/icons.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="next-btn" type="button" data-next-explore>
+            <svg width="34" height="34">
+              <use href="./images/icons/icons.svg#arrow-next"></use>
+            </svg>
+          </button>
+        </div>
       </section>
       <section class="about-muzik container container--padding">
         <div class="about-muzik__images">
@@ -679,10 +697,10 @@
         </div>
       </section>
 
-      <section class="container container--padding">
+      <section class="container testimonials">
         <h2 class="section__title section__title--centred">Testimonials</h2>
         <ul class="testimonials-list">
-          <!-- <li class="testimonials-list__item">
+          <li class="testimonials-list__item">
             <a href="#">
               <div class="quote-text-thumb">
                 <svg class="quote-left-icon" width="30" height="30">
@@ -707,10 +725,10 @@
                   />
                 </div>
                 <p class="avatar__name">Ellie James</p>
-                <a class="avatar__mail" href="mailto:ipsum.com">ipsum.com</a>
+                <p class="avatar__mail">ipsum.com</p>
               </div>
             </a>
-          </li> -->
+          </li>
           <li class="testimonials-list__item">
             <a href="#">
               <div class="quote-text-thumb">
@@ -736,11 +754,11 @@
                   />
                 </div>
                 <p class="avatar__name">Johnny Doe</p>
-                <a class="avatar__mail" href="mailto:ipsum.com">ipsum.com</a>
+                <p class="avatar__mail">ipsum.com</p>
               </div>
             </a>
           </li>
-          <!-- <li class="testimonials-list__item">
+          <li class="testimonials-list__item">
             <a href="#">
               <div class="quote-text-thumb">
                 <svg class="quote-left-icon" width="30" height="30">
@@ -765,17 +783,90 @@
                   />
                 </div>
                 <p class="avatar__name">Myne Barack</p>
-                <a class="avatar__mail" href="mailto:ipsum.com">ipsum.com</a>
+                <p class="avatar__mail">ipsum.com</p>
               </div>
             </a>
-          </li> -->
+          </li>
+          <li class="testimonials-list__item">
+            <a href="#">
+              <div class="quote-text-thumb">
+                <svg class="quote-left-icon" width="30" height="30">
+                  <use href="./images/icons/icons.svg#quotes-left"></use>
+                </svg>
+                <p class="testimonials-list__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <svg class="quote-rigth-icon" width="30" height="30">
+                  <use href="./images/icons/icons.svg#quotes-right"></use>
+                </svg>
+              </div>
+              <div class="avatar">
+                <div class="avatar-img-thumb">
+                  <img
+                    src="./images/avatars-test/Avatar-test1.jpg"
+                    alt="Ellie James"
+                  />
+                </div>
+                <p class="avatar__name">Ellie James</p>
+                <p class="avatar__mail">ipsum.com</p>
+              </div>
+            </a>
+          </li>
+          <li class="testimonials-list__item">
+            <a href="#">
+              <div class="quote-text-thumb">
+                <svg class="quote-left-icon" width="30" height="30">
+                  <use href="./images/icons/icons.svg#quotes-left"></use>
+                </svg>
+                <p class="testimonials-list__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <svg class="quote-rigth-icon" width="30" height="30">
+                  <use href="./images/icons/icons.svg#quotes-right"></use>
+                </svg>
+              </div>
+              <div class="avatar">
+                <div class="avatar-img-thumb">
+                  <img
+                    src="./images/avatars-test/Avatar-test2.jpg"
+                    alt="Johnny Doe"
+                  />
+                </div>
+                <p class="avatar__name">Johnny Doe</p>
+                <p class="avatar__mail">ipsum.com</p>
+              </div>
+            </a>
+          </li>
         </ul>
+
+        <div class="prev-next-buttons">
+          <button class="prev-btn" type="button" data-prev-testimonials>
+            <svg width="34" height="34">
+              <use href="./images/icons/icons.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="next-btn" type="button" data-next-testimonials>
+            <svg width="34" height="34">
+              <use href="./images/icons/icons.svg#arrow-next"></use>
+            </svg>
+          </button>
+        </div>
       </section>
 
-      <section class="container container--padding shots">
-        <h2 class="section__title">See our Best Shots</h2>
+      <section class="container shots">
+        <h2 class="section__title section__title--padding">
+          See our Best Shots
+        </h2>
         <ul class="shots-list">
-          <!-- <li class="shots-list__item">
+          <li class="shots-list__item">
             <a href="#">
               <article>
                 <div class="shots-list__img-thumb">
@@ -802,19 +893,19 @@
                 </div>
                 <ul class="likes-comments-list">
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#heart"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>412</p>
                   </li>
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#chat"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>140</p>
                   </li>
                 </ul>
@@ -825,7 +916,7 @@
                 </p>
               </article></a
             >
-          </li> -->
+          </li>
           <li class="shots-list__item">
             <a href="#">
               <article>
@@ -853,19 +944,19 @@
                 </div>
                 <ul class="likes-comments-list">
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#heart"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>412</p>
                   </li>
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#chat"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>140</p>
                   </li>
                 </ul>
@@ -904,19 +995,19 @@
                 </div>
                 <ul class="likes-comments-list">
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#heart"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>412</p>
                   </li>
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#chat"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>140</p>
                   </li>
                 </ul>
@@ -955,19 +1046,19 @@
                 </div>
                 <ul class="likes-comments-list">
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#heart"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>412</p>
                   </li>
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#chat"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>140</p>
                   </li>
                 </ul>
@@ -979,7 +1070,7 @@
               </article></a
             >
           </li>
-          <!-- <li class="shots-list__item">
+          <li class="shots-list__item">
             <a href="#">
               <article>
                 <div class="shots-list__img-thumb">
@@ -1006,19 +1097,19 @@
                 </div>
                 <ul class="likes-comments-list">
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#heart"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>412</p>
                   </li>
                   <li class="likes-comments-list__item">
-                    <button type="button">
+                    <div>
                       <svg width="24" height="24">
                         <use href="./images/icons/icons.svg#chat"></use>
                       </svg>
-                    </button>
+                    </div>
                     <p>140</p>
                   </li>
                 </ul>
@@ -1029,8 +1120,21 @@
                 </p>
               </article></a
             >
-          </li> -->
+          </li>
         </ul>
+
+        <div class="prev-next-buttons">
+          <button class="prev-btn" type="button" data-prev-shots>
+            <svg width="34" height="34">
+              <use href="./images/icons/icons.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="next-btn" type="button" data-next-shots>
+            <svg width="34" height="34">
+              <use href="./images/icons/icons.svg#arrow-next"></use>
+            </svg>
+          </button>
+        </div>
       </section>
       <section class="container contacts-details">
         <div class="contact-us">
@@ -1167,5 +1271,9 @@
         <p class="footer__copy">&copy; musik.com, 2021</p>
       </div>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

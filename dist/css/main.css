@@ -63,7 +63,7 @@ button {
   padding: 120px 375px;
 }
 
-.socials, .footer-menu, .speakers-list__video, .hero__whatch-video-link, .get-started-wrap, .menu, .navigation {
+.socials, .footer-menu, .speakers-list__video, .prev-next-buttons, .hero__whatch-video-link, .get-started-wrap, .menu, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ button {
           align-items: center;
 }
 
-.footer-menu-socials-wrap, .shots-list, .tiers-list, .tabs, .column-3--content, .singers-photos, .singers, .about-muzik, .header {
+.footer-menu-socials-wrap, .tiers-list, .tabs, .column-3--content, .singers-photos, .singers, .about-muzik, .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,6 +270,9 @@ button {
   background-color: #fff;
   color: #381ddb;
 }
+.link--border-light:hover, .link--border-light:focus {
+  border-color: #fff;
+}
 .link--bg-red {
   background-color: #fc5252;
   color: #fff;
@@ -295,6 +298,29 @@ button {
 }
 .link:hover .arrow-right-icon, .link:focus .arrow-right-icon {
   fill: #381ddb;
+}
+
+.prev-next-buttons {
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.prev-btn,
+.next-btn {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.prev-btn:hover,
+.next-btn:hover {
+  border-color: #381ddb;
+}
+.prev-btn:active,
+.next-btn:active {
+  border-color: #e0e0e0;
 }
 
 .about-muzik {
@@ -326,20 +352,11 @@ button {
   padding-left: 70px;
 }
 
-.category-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
-}
-
 .category__item {
   max-width: 370px;
   border-radius: 24px;
   padding: 90px 120px 36px 60px;
+  margin-right: 30px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -416,6 +433,9 @@ button {
   font-size: 34px;
   font-weight: 700;
   line-height: 1.3;
+}
+.section__title--padding {
+  padding-left: 375px;
 }
 .section__title--margin-contacts-us {
   margin-bottom: 8px;
@@ -715,14 +735,28 @@ button {
   margin-bottom: 80px;
 }
 
+.testimonials {
+  padding-bottom: 251px;
+}
+
 .testimonials-list {
-  margin-bottom: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimonials-list__item {
   position: relative;
+  max-width: 770px;
   margin: 0 auto;
-  width: 770px;
+  margin-right: 30px;
+  padding-bottom: 152px;
 }
 
 .quote-text-thumb {
@@ -750,6 +784,7 @@ button {
 }
 
 .avatar-img-thumb {
+  margin: 0 auto;
   margin-bottom: 20px;
   width: 120px;
   height: 120px;
@@ -759,11 +794,11 @@ button {
 
 .avatar {
   position: absolute;
-  bottom: -60%;
+  bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 127px;
+  width: 140px;
   margin: 0 auto;
   text-align: center;
 }
@@ -794,7 +829,10 @@ button {
 }
 
 .shots-list__item {
-  width: 370px;
+  max-width: 370px;
+}
+.shots-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .shots-list__img-thumb {

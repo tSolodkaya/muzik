@@ -1,13 +1,8 @@
-.category-menu {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
 .category__item {
   max-width: 370px;
   border-radius: 24px;
   padding: 90px 120px 36px 60px;
+  margin-right: 30px;
 
   transition: background-color 250ms $transition-function;
 

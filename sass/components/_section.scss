@@ -1,6 +1,10 @@
 .section__title {
   margin-bottom: 60px;
 
+  &--padding {
+    padding-left: 375px;
+  }
+
   &--margin-contacts-us {
     margin-bottom: 8px;
   }

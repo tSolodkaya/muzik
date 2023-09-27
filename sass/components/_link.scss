@@ -36,6 +36,13 @@
     }
   }
 
+  &--border-light {
+    &:hover,
+    &:focus {
+      border-color: $general-light;
+    }
+  }
+
   &--bg-red {
     background-color: $general-red;
     color: $general-light;
