@@ -3,6 +3,13 @@
 
   width: 1075px;
   background: url("../../images/contacts/shape-2.png"), $bg-dark;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url("../../images/contacts/shape-2@2x.png"), $bg-dark;
+  }
+
   background-repeat: no-repeat;
   background-position: bottom 0 right 56px;
 }

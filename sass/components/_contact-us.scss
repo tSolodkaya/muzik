@@ -11,6 +11,13 @@
 
   color: $general-light;
   background: url("../../images/contacts/shape-1.png"), $general-blue;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url("../../images/contacts/shape-1@2x.png"), $general-blue;
+  }
+
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
 }
@@ -31,8 +38,6 @@
   font-weight: 700;
   line-height: 1.22;
   vertical-align: middle;
-
- 
 }
 
 .contact-us__link-wrap {

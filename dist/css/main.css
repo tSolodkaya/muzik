@@ -880,6 +880,11 @@ button {
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contact-us {
+    background: url("../../images/contacts/shape-1@2x.png"), #381ddb;
+  }
+}
 
 .contact-us__question {
   margin-bottom: 80px;
@@ -909,6 +914,11 @@ button {
   background: url("../../images/contacts/shape-2.png"), rgba(34, 34, 34, 0.03);
   background-repeat: no-repeat;
   background-position: bottom 0 right 56px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .details {
+    background: url("../../images/contacts/shape-2@2x.png"), rgba(34, 34, 34, 0.03);
+  }
 }
 
 .details__title {
