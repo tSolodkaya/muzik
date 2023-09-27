@@ -652,6 +652,10 @@ button {
   background-color: #381ddb;
   opacity: 1;
 }
+.tabs__link:hover::after {
+  background-color: #381ddb;
+  opacity: 0.5;
+}
 
 .tiers-list__item {
   -ms-flex-preferred-size: 370px;

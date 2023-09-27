@@ -44,4 +44,9 @@
     background-color: $general-blue;
     opacity: 1;
   }
+
+  &:hover::after {
+    background-color: $general-blue;
+    opacity: 0.5;
+  }
 }
